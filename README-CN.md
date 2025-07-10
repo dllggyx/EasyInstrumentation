@@ -9,7 +9,7 @@
 3. 指令实时反汇编
 
 ## Environment
-在基于 Debian/Ubuntu 的系统上，您需要安装 build-essential 和 libcapstone-dev 来满足编译需求。
+在基于Debian/Ubuntu的系统上，您需要安装`build-essential`和`libcapstone-dev`来满足编译需求。
 ```bash
 sudo apt-get update
 sudo apt-get install build-essential libcapstone-dev
@@ -21,7 +21,7 @@ sudo apt-get install build-essential libcapstone-dev
 make
 ./instrument victim
 ```
-你也可以对别的二进制文件做插桩，例如可以对/bin/ls做插桩,使用`-v`可以显示详细信息：
+你也可以对别的二进制文件做插桩，例如可以对`/bin/ls`做插桩,使用`-v`可以显示详细信息：
 ```bash
 ./instrument -v /bin/ls
 ```
@@ -29,7 +29,7 @@ make
 |Parameter|Description|
 |:-:|:-|
 |-h|**帮助 (Help)**: 打印此帮助信息并退出。|
-|-a|**跟踪全部 (Trace All)**: 跟踪所有内存区域的代码执行，包括共享库（如 libc.so）。默认情况下，工具只跟踪主程序 .text 段内的代码。 警告: 此选项会极大降低运行速度，并可能因进入复杂的库代码而导致跟踪失败或行为异常。|
+|-a|**跟踪全部 (Trace All)**: 跟踪所有内存区域的代码执行，包括共享库（如 libc.so）。默认情况下，工具只跟踪主程序.text段内的代码。 警告: 此选项会极大降低运行速度，并可能因进入复杂的库代码而导致跟踪失败或行为异常。|
 |-v|**详细模式 (Verbose Mode)**: 打印详细的跟踪日志。这对于调试工具本身或深入理解其工作流程非常有用。日志内容包括：共享内存创建、基地址计算、断点设置、远程调用详情、每个基本块的入口地址以及覆盖率边的触发等。|
 
 ## 程序运行的流程
