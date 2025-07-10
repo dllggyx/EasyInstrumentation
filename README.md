@@ -20,7 +20,7 @@ You can use the following commands to instrument the provided victim program.
 make
 ./instrument victim
 ```
-You can also instrument other binaries, e.g. /bin/ls, and use '-v' to show the details:
+You can also instrument other binaries, e.g. `/bin/ls`, and use `-v` to show the details:
 ```bash
 ./instrument -v /bin/ls
 ```
