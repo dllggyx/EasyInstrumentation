@@ -8,7 +8,7 @@
 3. Real-time Instruction Disassembly
 
 ## Environment
-On Debian/Ubuntu-based systems, you need to install `build-essential`` and `libcapstone-dev` to meet the compilation requirements.
+On Debian/Ubuntu-based systems, you need to install `build-essential` and `libcapstone-dev` to meet the compilation requirements.
 ```bash
 sudo apt-get update
 sudo apt-get install build-essential libcapstone-dev
